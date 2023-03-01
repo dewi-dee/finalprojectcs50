@@ -28,6 +28,6 @@ containing summary ogfinformatic lesson grade 7 and for eachchapter i provide su
 You can use my webpage very easy, just accsess the web and clic the menu as you need.
 if you accsess it from codespase just go  to the directory of my project and type in the terminal **http-server**
 
-
-![gambar](md.png)
+**watch my video explanation here...**
+[link youtube](https://youtu.be/cvR7MqaO2nM)
 
