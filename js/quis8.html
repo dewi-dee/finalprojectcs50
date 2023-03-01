@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="../styles1.css" rel="stylesheet">
+        <link href="../images/favicon.ico" rel="icon">
+        <title>DEWIE>ID-Quis</title>
+    </head>
+    <body>
+        <div class="header">
+        <h1> Latihan Soal Dampak Sosial Informatika</h1>
+        </div>
+        <div class="main">
+        <div class="pilgan">
+
+            <h2>Multiple Choice !</h2>
+            <h3>Pink untuk jawaban salah, dan hijau untuk jawaban benar</h3>
+
+            <h4>1. Media sosial ciptaan Jark Dorsey adalah...
+            </h4>
+            <ul>
+            <li><button class="benar">twitter</button></li>
+            <li><button class="salah">tiktok</button></li>
+            <li><button class="salah">facebook</button></li>
+            <li><button class="salah">telegram</button></li>
+            <p class="feedback"></p>
+            </ul>
+
+            <hr>
+            <h2>Free Response !</h2>
+            <h3>Merah untuk jawaban salah, dan hijau untuk jawaban benar</h3>
+
+                <h4>2. Media sosial ciptaan Mark Zuckerberg adalah......</h4>
+                <input type="text"></input>
+                <button id="check">Cek Jawaban</button>
+                <p class="feedback"></p>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+            // Get all elements with class "correct"
+            let benar = document.querySelectorAll('.benar');
+            // Add event listeners untuk setiap jawaban benar
+            for (let tombol = 0; tombol < benar.length; tombol++) {
+                    benar[tombol].addEventListener('click', function() {
+
+                        // mengatur warna tombol jika jawaban benar
+                        benar[tombol].style.backgroundColor = 'green';
+                        benar[tombol].parentElement.querySelector('.feedback').innerHTML = 'Benar!';
+                    });
+                }
+                // When any incorrect answer is clicked, change color to red.
+                let salah = document.querySelectorAll(".salah");
+                for (let tombol = 0; tombol < salah.length; tombol++) {
+                    salah[tombol].addEventListener('click', function() {
+
+                        // mengatur warna tombol ke merah
+                        salah[tombol].style.backgroundColor = 'pink';
+                        salah[tombol].parentElement.querySelector('.feedback').innerHTML = 'Salah';
+                    });
+                    }
+
+
+                    // memeriksa hasil input siswa
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    if (input.value === 'Facebook') {
+                        input.style.backgroundColor = 'green';
+                        input.parentElement.querySelector('.feedback').innerHTML = 'benar!';
+                    }
+                    else {
+                        input.style.backgroundColor = 'pink';
+                        input.parentElement.querySelector('.feedback').innerHTML = 'salah';
+                    }
+                });
+		        });
+            </script>
+            </div>
+            <div class="kembali">
+                <button>
+                    <p><a href="../exam.html">Back to Exam Page</a></p>
+                </button>
+            </div>
+    </body>
+</html>

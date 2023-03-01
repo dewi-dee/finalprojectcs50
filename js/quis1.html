@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="../styles1.css" rel="stylesheet">
+        <link href="../images/favicon.ico" rel="icon">
+        <title>DEWIE>ID-Quis</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> Latihan Soal Informatika dan Keterampilan Generik </h1>
+        </div>
+    <div class="main">
+        <div class="pilgan">
+
+            <h2>Multiple Choice !</h2>
+            <h3>Pink untuk jawaban salah, dan hijau untuk jawaban benar</h3>
+
+            <h4>1. Ruang lingkung pada ilmu informatika yang mempelajari tentang konsep matematis dari suatu informasi adalah aspek...</h4>
+            <ul>
+            <li><button class="salah">Ilmu Informatika</button></li>
+            <li><button class="salah">Ilmu Informasi</button></li>
+            <li><button class="benar">Teori Informasi</button></li>
+            <li><button class="salah">Sistem Informasi</button></li>
+            <p class="feedback"></p>
+            </ul>
+
+            <h4>2. Pembuatan karya digital dengan cara mengirim email serta menggunakan browser akan dipelajari siswa dalam bidang...</h4>
+            <ul>
+            <li><button class="benar">teknologi informasi dan komunikasi</button></li>
+            <li><button class="salah">jaringan komputer dan internet</button></li>
+            <li><button class="salah">sistem komputer</button></li>
+            <li><button class="salah">praktik lintas bidang</button></li>
+            <p class="feedback"></p>
+            </ul>
+
+            <h4>3.  Aspek praktika informatika dijabarkan dalam beberapa hal sebagai berikut, kecuali...</h4>
+            <ul>
+            <li><button class="salah">mengembangkan artefak komputasi</button></li>
+            <li><button class="benar">membina budaya kerja masyrakat digital dalam tim yang eksklusif</button></li>
+            <li><button class="salah">berkolaborasi untuk melaksanakan tugas dengan tema komputasi</button></li>
+            <li><button class="salah">mengembangkan dan menggunakan abstraksi</button></li>
+            <p class="feedback"></p>
+            </ul>
+
+            <h4>4. di bawah ini Yang bukan termasuk bidang pengetahuan informatika adalah...</h4>
+            <ul>
+            <li><button class="salah">analisis data</button></li>
+            <li><button class="salah">sistem komputer</button></li>
+            <li><button class="salah">algoritma dan pemrograman</button></li>
+            <li><button class="benar">internet</button></li>
+            <p class="feedback"></p>
+            </ul>
+
+            <h4>5. dalam Keterampilan generik dimana kita mampu menerapkan bilangan dan menghitung termasuk dalam bidang...</h4>
+            <ul>
+            <li><button class="benar">numerasi</button></li>
+            <li><button class="salah">komunikasi</button></li>
+            <li><button class="salah">organisasi kerja</button></li>
+            <li><button class="salah">manajemen</button></li>
+            <p class="feedback"></p>
+            </ul>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+            // Get all elements with class "correct"
+            let benar = document.querySelectorAll('.benar');
+            // Add event listeners untuk setiap jawaban benar
+            for (let tombol = 0; tombol < benar.length; tombol++) {
+                    benar[tombol].addEventListener('click', function() {
+
+                        // mengatur warna tombol jika jawaban benar
+                        benar[tombol].style.backgroundColor = 'green';
+                        benar[tombol].parentElement.querySelector('.feedback').innerHTML = 'Benar!';
+                    });
+                }
+                // When any incorrect answer is clicked, change color to red.
+                let salah = document.querySelectorAll(".salah");
+                for (let tombol = 0; tombol < salah.length; tombol++) {
+                    salah[tombol].addEventListener('click', function() {
+
+                        // mengatur warna tombol ke merah
+                        salah[tombol].style.backgroundColor = 'pink';
+                        salah[tombol].parentElement.querySelector('.feedback').innerHTML = 'Salah';
+                    });
+                    }
+		        });
+            </script>
+            </div>
+            <div class="kembali">
+                <button>
+                    <p><a href="../exam.html">Back to Exam Page</a></p>
+                </button>
+            </div>
+    </body>
+</html>
