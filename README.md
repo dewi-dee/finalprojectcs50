@@ -10,21 +10,21 @@ i made this final project based on Pset 8 Homepage, i provide a simple e-learnin
 containing summary ogfinformatic lesson grade 7 and for eachchapter i provide subject summary and downloadable document. and also simple quizzes in the form of multiple choice and fill-in quizzes using javascript.
 
 >**Technology use**
->>html
->>javascript
->>css
+>>*html
+>>*javascript
+>>*css
 
 >**features**
->>Index/home
->>Lesson
->>Quis
->>summary
->>About me
->>contact by email
->>Downloadable document
+>>*Index/home
+>>*Lesson
+>>*Quis
+>>*summary
+>>*About me
+>>*contact by email
+>>*Downloadable document
 
 
-**HoW TO Use**
+**HoW TO Use:**
 You can use my webpage very easy, just accsess the web and clic the menu as you need.
 
 * index: you can clik the navigation bar to go to other page such as lesson, exam and summary or about me.
